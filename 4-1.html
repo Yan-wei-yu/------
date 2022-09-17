@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      charset="utf-8"
+    ></script>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .full-width {
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+    }
+    @media only screen and (max-width: 768px) {
+      #main_title {
+        font-size: 2em;
+      }
+      .col-md-3 {
+        display: none;
+      }
+      .col-md-9 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      #second_title {
+        font-size: 1.5em;
+      }
+      .third_title {
+        font-size: 26px;
+        line-height: 60px;
+      }
+      #introduce_content {
+        font-size: 25px;
+        line-height: 50px;
+      }
+      .list-style {
+        font-size: 26px;
+        line-height: 60px;
+      }
+      .list-style li {
+        padding-left: 5px;
+      }
+      #movie_title {
+        font-size: 25px;
+      }
+    }
+    @media only screen and (min-width: 769px) {
+      .third_title {
+        font-size: 30px;
+        line-height: 70px;
+      }
+      #introduce_content {
+        font-size: 32px;
+        line-height: 60px;
+      }
+      .list-style {
+        font-size: 30px;
+        line-height: 60px;
+      }
+      .list-style li {
+        padding-left: 5px;
+      }
+      #movie_title {
+        font-size: 35px;
+      }
+    }
+
+    h2 {
+      margin: 0px 40px 0px 0px;
+      border-bottom: 2px solid #ffffff;
+    }
+    .col-md-3 {
+      background-color: rgb(7, 32, 39);
+    }
+    body {
+      color: #ffffff;
+    }
+    .col-md-9 {
+      background-color: rgb(22, 41, 53);
+    }
+
+    #bread_area .breadcrumb-item + .breadcrumb-item:before {
+      content: "-";
+      color: #ffffff;
+    }
+    #bread_area .breadcrumb {
+      background: inherit;
+      padding: 0;
+    }
+    #bread_area {
+      margin: 40px 0px 30px 0px;
+    }
+
+    #bread_area a,
+    .breadcrumb-item.active {
+      color: #ffffff;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    .side-bar {
+      background: inherit;
+      width: 100%;
+      height: 100vh;
+      /*position: fixed;*/
+      overflow-y: auto;
+      transition: 0.6s ease;
+      margin: 0;
+    }
+
+    .side-bar::-webkit-scrollbar {
+      width: 0px;
+    }
+
+    .side-bar .menu {
+      width: 100%;
+      margin-top: 10px;
+    }
+    .side-bar .menu .item {
+      position: relative;
+      cursor: pointer;
+    }
+    .side-bar .menu .item a {
+      color: inherit;
+      font-size: 20px;
+      text-decoration: none;
+      display: block;
+      padding: 0px 0px;
+      line-height: 40px;
+    }
+    .sub-btn{
+		margin-top: 22px;
+	}
+    .side-bar .menu .item a .dropdown {
+      margin: 0px 0px 0px 10px;
+    }
+    .sub-item i {
+      margin: 10px 0px 0px 10px;
+    }
+
+    .side-bar .menu .item .sub-menu {
+      background: inherit;
+    }
+    .side-bar .menu .item .sub-menu a {
+      padding-left: 70px;
+    }
+    .rotate {
+      transform: rotate(-90deg);
+    }
+    .side-bar .menu .item a:nth-child(1) {
+      color: #13efdc;
+    }
+    .sub-menu.active {
+      position: relative;
+      padding: 0;
+    }
+    .sub-menu.active:before {
+      position: absolute;
+      content: " ";
+      margin-left: 55px;
+      border-left: 3px solid #ffffff;
+      height: 100%;
+      display: block;
+      z-index: 1;
+    }
+    .btn {
+  background: none;
+  position: absolute;
+  margin: -34px 0px 0px 80px;
+  border: black; 
+  color: #13efdc;
+  padding: 0px; 
+  font-size: 20px; 
+  cursor: pointer;
+  margin-bottom: 10px;
+  width: 10px;
+}
+.btn:hover {
+  color: #13efdc;
+}
+    #title {
+      margin: 30px 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #main_title {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #introduce-part {
+      margin-top: 40px;
+    }
+    .thumb {
+      position: relative;
+      display: block;
+    }
+    .thumb img {
+      object-fit: cover;
+      border-radius: 60px;
+      position: relative;
+      width: 90px;
+      height: 90px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+	  
+    }
+    .name {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 25px;
+      width: 200px;
+      background-color: rgb(21, 112, 136);
+      font-size: 30px;
+      text-align: center;
+    }
+    .content_center {
+      text-align: center;
+    }
+    .product_particularity {
+      margin-top: 20px;
+      font-size: 22px;
+      display: inline-block;
+      text-align: left;
+    }
+  </style>
+  <body>
+    <div class="container full-width">
+      <div class="row">
+        <div class="col-md-3">
+          <div id="bread_area">
+            <ul class="breadcrumb breadcrumb_obj">
+              <li class="breadcrumb-item">
+                <a href="https://printin3d.com.tw/">首頁</a>
+              </li>
+              <li class="breadcrumb-item"><a href="https://printin3d.com.tw/consumables/">耗材</a></li>
+              <li class="breadcrumb-item active">列印樹脂</li>
+            </ul>
+          </div>
+          <div id="side_title">
+            <h2 class="side_title_text">項目</h2>
+          </div>
+
+          <div class="side-bar active">
+            <div class="menu">
+              <div class="item">
+                <a href="https://printin3d.com.tw/consumables/" class="sub-item" style="color: #13efdc;padding-left: 30px;"
+                >耗材</a><button class="btn"><i class="fa fa-angle-down" style="width: 10px;"><a style="height: 5px; "></a></i
+              ></a></button>
+                <div class="sub-menu active">
+                  <a href="https://printin3d.com.tw/printresin/" class="sub-item">列印樹脂</a>
+                  <a href="https://printin3d.com.tw/dental-implant-accessories/" class="sub-item">植牙配件</a>
+                  <a href="https://printin3d.com.tw/hot-pressing-mould/" class="sub-item">熱壓模片</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div id="introduce-part">
+            <div id="list_grid" class="container">
+              <div class="row">
+                <div id="title" class="col-12 col-sm-12 col-lg-12">
+                  <div class="page_title">
+                    <div class="thumb">
+                      <h1 id="main_title"><b>列印樹脂</b></h1>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-6">
+                  <div class="thumb">
+                    <img src="https://printin3d.com.tw/wp-content/uploads/2022/09/模型樹脂100x100.png" />
+                    <p class="name">模型樹脂</p>
+                  </div>
+                  <div class="content_center">
+                    <ul class="product_particularity">
+                      <li>高強度與高耐磨</li>
+                      <li>低收縮率</li>
+                      <li>可用於熱壓成型</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-6">
+                  <div class="thumb">
+                    <img src="https://printin3d.com.tw/wp-content/uploads/2022/09/水洗模型樹脂100x100.png" />
+                    <p class="name">水洗模型樹脂</p>
+                  </div>
+				  <div class="content_center">
+                    <ul class="product_particularity">
+                      <li>高解析度</li>
+                      <li>低點度可水洗</li>
+                      <li>可用於熱壓成型</li>
+                    </ul>
+                  </div>
+                </div>
+				<div class="col-12 col-sm-6 col-lg-6">
+					<div class="thumb">
+					  <img src="https://printin3d.com.tw/wp-content/uploads/2022/09/導板樹脂100x100.png" />
+					  <p class="name">導板樹脂</p>
+					</div>
+					<div class="content_center">
+					  <ul class="product_particularity"style="margin-right: 20px;">
+						<li>高精密度</li>
+						<li>可高壓消毒</li>
+						<li>高生物相容性</li>
+					  </ul>
+					</div>
+				  </div>
+				  <div class="col-12 col-sm-6 col-lg-6">
+					<div class="thumb">
+					  <img src="https://printin3d.com.tw/wp-content/uploads/2022/09/假牙樹脂100x100.png" />
+					  <p class="name">假牙樹脂</p>
+					</div>
+					<div class="content_center">
+					  <ul class="product_particularity" style="margin-left: 45px;">
+						<li>高強度與高耐磨</li>
+						<li>易修整、染色與拋光</li>
+						<li>高生物相容性</li>
+					  </ul>
+					</div>
+				  </div>
+				  <div class="col-12 col-sm-6 col-lg-6">
+					<div class="thumb">
+					  <img src="https://printin3d.com.tw/wp-content/uploads/2022/09/蠟型樹脂100x100.png" />
+					  <p class="name">蠟型樹脂</p>
+					</div>
+					<div class="content_center">
+					  <ul class="product_particularity" style="margin-left: 22px;">
+						<li>高強度</li>
+						<li>高精密度</li>
+						<li>用於快速包埋鑄造</li>
+					  </ul>
+					</div>
+				  </div>
+				  <div class="col-12 col-sm-6 col-lg-6">
+					<div class="thumb">
+					  <img src="https://printin3d.com.tw/wp-content/uploads/2022/09/咬合板樹脂100x100.png" />
+					  <p class="name">咬合板樹脂</p>
+					</div>
+					<div class="content_center">
+					  <ul class="product_particularity" style="margin-left: 65px;">
+						<li>高彈性</li>
+						<li>可選用於客製化咬合板</li>
+						<li>高生物相容性</li>
+					  </ul>
+					</div>
+				  </div>
+				  <div class="col-12 col-sm-6 col-lg-6">
+            <div class="thumb">
+              <img src="https://printin3d.com.tw/wp-content/uploads/2022/09/牙托樹脂100x100.png" />
+              <p class="name">牙托樹脂</p>
+            </div>
+            <div class="content_center">
+              <ul class="product_particularity" style="margin-right: 20px;">
+              <li>高硬度</li>
+              <li>低收縮率</li>
+              <li>高生物相容性</li>
+              </ul>
+            </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-6">
+            <div class="thumb">
+              <img src="https://printin3d.com.tw/wp-content/uploads/2022/09/彈性牙床樹脂100x100.png" />
+              <p class="name">彈性牙床樹脂</p>
+            </div>
+            <div class="content_center">
+              <ul class="product_particularity"style="margin-left: 40px;">
+              <li>高韌性</li>
+              <li>易修整、染色與拋光</li>
+              <li>高生物相容性</li>
+              </ul>
+            </div>
+				  </div><div class="col-12 col-sm-6 col-lg-6">
+            <div class="thumb">
+              <img src="https://printin3d.com.tw/wp-content/uploads/2022/09/活動牙床樹脂100x100.png" />
+              <p class="name">活動牙床樹脂</p>
+            </div>
+            <div class="content_center">
+              <ul class="product_particularity" style="margin-left: 45px;">
+              <li>高強度與高耐磨</li>
+              <li>易修整、染色與拋光</li>
+              <li>高生物相容性</li>
+              </ul>
+            </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-6">
+            <div class="thumb">
+              <img src="https://printin3d.com.tw/wp-content/uploads/2022/09/隱形牙套100x100.png"/>
+              <p class="name">隱形牙套樹脂</p>
+            </div>
+            <div class="content_center">
+              <ul class="product_particularity"style="margin-left: 60px;">
+              <li>具有形狀尺寸記憶功能</li>
+              <li>高韌性</li>
+              <li>高生物相容性</li>
+              </ul>
+            </div>
+				  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+     $(document).ready(function () {
+        //jquery for toggle sub menus
+        $(".btn").click(function () {
+          $(this).next(".sub-menu").slideToggle();
+          $(this).find(".fa-angle-down").toggleClass("rotate");
+        });
+      });
+    </script>
+  </body>
+</html>

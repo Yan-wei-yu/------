@@ -84,22 +84,6 @@
       }
     }
 
-    @media only screen and (max-width: 486px) {
-      .color_title{
-      font-size: 20px;
-      }
-    }
-    @media only screen and (min-width: 487px) and (max-width: 992px) {
-      .color_title{
-      font-size: 30px;
-      }
-    }
-    @media only screen and (min-width: 992px) {
-      .color_title{
-      font-size: 25px;
-      }
-    }
-    
     h2 {
       margin: 0px 40px 0px 0px;
       border-bottom: 2px solid #ffffff;
@@ -136,7 +120,7 @@
     .side-bar {
       background: inherit;
       width: 100%;
-      height: 100vh;
+      height: 70vh;
       transition: 0.6s ease;
       margin: 0;
     }
@@ -169,7 +153,7 @@
       margin: 0px 0px 0px 10px;
     }
     .fa-angle-right {
-      margin: 0px 0px 0px 10px;
+      margin: 10px 0px 0px 10px;
     }
 
     .side-bar .menu .item .sub-menu {
@@ -207,12 +191,6 @@
     #main_title {
       font-family: Arial, Helvetica, sans-serif;
     }
-    .color_title{
-	background-color: rgb(22,112,136);
-	margin: 20px 0px 0px 0px;
-  text-align: left;
-  padding-left: 20px;
-}
 
     #introduce-part {
       margin-top: 40px;
@@ -227,7 +205,16 @@
       max-height: 100%;
       margin: auto;
     }
-   
+    .name {
+      margin: 50px 0px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 120px;
+      background-color: rgb(21, 112, 136);
+      border-radius: 20px;
+      font-size: 30px;
+      text-align: center;
+    }
     .btn {
   background: none;
   position: absolute;
@@ -238,6 +225,7 @@
   font-size: 20px; 
   cursor: pointer;
   margin-bottom: 10px;
+  cursor: pointer;
   width: 10px;
 }
 .btn:hover {
@@ -260,8 +248,7 @@
                 <a href="https://printin3d.com.tw/">首頁</a>
               </li>
               <li class="breadcrumb-item"><a>數位牙科設備</a></li>
-              <li class="breadcrumb-item"><a href="https://printin3d.com.tw/scan-device/">掃描設備</a></li>
-              <li class="breadcrumb-item active">桌掃機</li>
+              <li class="breadcrumb-item active">掃描設備</li>
             </ul>
           </div>
           <div id="side_title">
@@ -281,7 +268,7 @@
                   ></a></button>
                   <div class="sub-menu1 active">
                     <a href="https://printin3d.com.tw/digital-intraoral-scanner/" class="sub-item">口掃機</a>
-                    <a href="https://printin3d.com.tw/digital-desktop-scanner/" class="sub-item" style="color: #13efdc;">桌掃機</a>
+                    <a href="https://printin3d.com.tw/digital-desktop-scanner/"" class="sub-item">桌掃機</a>
                     <a href="https://printin3d.com.tw/digital-face-scanner/" class="sub-item">臉掃機</a>
                   </div>
                     <a class="sub-btn1" style="font-size: 20px;"
@@ -294,14 +281,14 @@
 					<a href="https://printin3d.com.tw/form3/" class="sub-item">Form3</a>
 					<a href="https://printin3d.com.tw/curing-machine/" class="sub-item">高強度固化機</a>
 				</div>
-                  <a href="https://printin3d.com.tw/dental-milling-machine/" class="sub-item">牙雕機</a>
-                  <a class="sub-btn2"
-                    >其他<i class="fa fa-angle-right"></i
-                  ></a>
-                  <div class="sub-menu3 active">
-                    <a href="https://printin3d.com.tw/vacuum-forming-machine/" class="sub-item" >氣壓熱塑成型機</a>
-                    <a href="https://printin3d.com.tw/medical-headlight/" class="sub-item">醫療頭燈</a>
-                  </div>
+        <a href="https://printin3d.com.tw/dental-milling-machine/" class="sub-item">牙雕機</a>
+        <a class="sub-btn2"
+        >其他<i class="fa fa-angle-right"></i
+      ></a>
+      <div class="sub-menu3 active">
+        <a href="https://printin3d.com.tw/vacuum-forming-machine/" class="sub-item" >氣壓熱塑成型機</a>
+        <a href="https://printin3d.com.tw/medical-headlight/" class="sub-item">醫療頭燈</a>
+      </div>
                 </div>
               </div>
             </div>
@@ -311,89 +298,29 @@
           <div id="introduce-part">
             <div id="list_grid" class="container">
               <div class="row">
-                <div class="col-12 col-sm-12 col-lg-12">
-                  <div class="grid_content">
-                    <p style="font-size: 30px;">桌掃機</p>
-                  </div>
-                </div>
-                <div class="col-sm-12 col-lg-6">
-                  <div class="grid_content">
-                    <p class="color_title">
-                      Carestream CS 3700口腔掃描機</p>
-                  </div>
-                </div>
-                <div class="col-sm-12 col-lg-12"></div>
-                <div class="thumb col-sm-12 col-lg-4 mt-4">
-                  <img  
-                  src="./桌掃機/Medit T 系列.png"
-                  />
-                </div>
-                <div class="col-sm-12 col-lg-8 mt-4">
-                  <div class="grid_content">
+                <div id="title" class="col-12 col-sm-12 col-lg-12">
+                  <div class="page_title">
                     <div class="thumb">
-                      <img  
-                      src="./桌掃機/Medit T 系列規格.png"
-                      />
+                      <h1 id="main_title"><b>掃描設備</b></h1>
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-12 col-lg-6"style="margin-top:100px;">
-                  <div class="grid_content">
-                    <p class="color_title">Heron™ IOS口腔掃描機</p>
-                    <div class="thumb col-lg-9 col-md-8 col-sm-9 mt-5">
-                      <img  
-                      src="https://printin3d.com.tw/wp-content/uploads/2022/09/Heron™-IOS口腔掃描機.png"
-                      />
-                    </div>
+                <div class="col-12 col-sm-12 col-lg-4">
+                  <div class="thumb">
+                    <p class="name">口掃機</p>
+                    <img src="https://printin3d.com.tw/wp-content/uploads/2022/09/Heron™-IOS口腔掃描機.png" />
                   </div>
                 </div>
-                <div class="col-sm-12 col-lg-8">
-                  <div class="grid_content">
-                    <div class="thumb ">
-                      <img
-                      src="https://printin3d.com.tw/wp-content/uploads/2022/09/Heron™-IOS口腔掃描機規格.png"
-                      />
-                    </div>
+                <div class="col-12 col-sm-12 col-lg-4">
+                  <div class="thumb">
+                    <p class="name">桌掃機</p>
+                    <img src="https://printin3d.com.tw/wp-content/uploads/2022/09/Heron™-IOS口腔掃描機.png" />
                   </div>
                 </div>
-                <div class="col-sm-12 col-lg-6"style="margin-top:100px;">
-                  <div class="grid_content">
-                    <p class="color_title">3Shape TRIOS 3 Basic口腔掃描機</p>
-                    <div class="thumb">
-                      <img  
-                      src="https://printin3d.com.tw/wp-content/uploads/2022/09/3Shape-TRIOS-3-Basic口腔掃描機.png"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-12 col-lg-8">
-                  <div class="grid_content">
-                    <div class="thumb">
-                      <img
-                      src="https://printin3d.com.tw/wp-content/uploads/2022/09/3Shape-TRIOS-3-Basic口腔掃描機規格.png"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-12 col-lg-6" style="margin-top:100px;">
-                  <div class="grid_content">
-                    <p class="color_title">Medit i700口腔掃描機</p>
-                    <div class="thumb"style="text-align: center;">
-                      <img  
-                      src="https://printin3d.com.tw/wp-content/uploads/2022/09/Medit-i700口腔掃描機-e1662651348777.png"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-12 col-lg-8">
-                  <div class="grid_content">
-                    <div class="thumb" >
-                      <img
-                      src="https://printin3d.com.tw/wp-content/uploads/2022/09/Medit-i700口腔掃描機規格.png"
-                      />
-                    </div>
-                  </div>
-                </div>
+                <div class="col-12 col-sm-12 col-lg-4">
+                  <div class="thumb">
+                    <p class="name">臉掃機</p>
+                    <img src="https://printin3d.com.tw/wp-content/uploads/2022/09/Heron™-IOS口腔掃描機.png" />
                   </div>
                 </div>
               </div>

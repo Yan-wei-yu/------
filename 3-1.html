@@ -24,9 +24,29 @@
     min-width: 100%;
     max-width: 100%;
 }
+@media only screen and (min-width: 1210px) {
+    .col-md-3 {
+      padding-left: 45px;
+    }
+  }
+  @media only screen and (min-width:769px) {
+	#main_title{
+			font-size: 48px;
+			font-weight: 600;
+		}
+		#second_title{
+			font-size: 36px;
+			font-weight: 500;
+		}
+  }
 	@media only screen and (max-width:768px) {
 		#main_title{
-			font-size: 2.0em;
+			font-size: 42px;
+			font-weight: 600;
+		}
+		#second_title{
+			font-size: 30px;
+			font-weight: 500;
 		}
 		.col-md-3{
 		
@@ -37,15 +57,11 @@
 		max-width: 100%;
 		
 	}
-		#second_title{
-			font-size: 1.5em;
-		}
+		
 		.third_title{
-		font-size: 22px;
+		font-size: 26px;
 	}
-	#over_title{
-		font-size: 20px;
-	}
+
 }
 @media only screen and (min-width:769px)and (max-width:850px) {
 	.third_title{
@@ -56,16 +72,10 @@
 	@media only screen and (min-width:851px) {
 	
 		.third_title{
-		font-size: 30px;
+		font-size: 34px;
 	}
 }
-@media only screen and (min-width:769px)and (max-width:890px) {
-	
 
-#over_title{
-		font-size: 22px;
-	}
-}
 
 	h2{
 		margin: 0px 40px 0px 0px;
@@ -174,7 +184,8 @@
 }
 #main_title,#second_title{
 	font-family: Arial, Helvetica, sans-serif;
-	font-weight: 100;
+	font-weight: 600;
+	text-align: center;
 }
 .thumb {
     position: relative;
@@ -200,45 +211,52 @@
 }
 #title{
 	display: flex; 
-	align-items:flex-end; 
+	align-items:center; 
 }
 .third_title{
 	
 	text-align: left;
 	margin:30px 0px 0px 0px;
-	font-weight: 400;
-	/* letter-spacing:5px; */
+	font-weight: 500;
 	
 }
 .grid_content{
 	display: flex;
 }
-.color_title{
-	background-color: rgb(22,112,136);
-	font-size: 35px;
-	text-align: center;
-	width: 150px;
-	margin: 28px 0px 0px 0px;
-}
-.movie_title{
-	margin-top: 20px;
-	font-size: 24px;
-	font-weight: 500;
-}
+.color_title {
+    background-color: rgb(22, 112, 136);
+    margin: 10px 0px;
+    padding: 5px 25px;
+    font-size: 34px;
+    text-align: center;
+    font-weight: 600;
+	letter-spacing: 3px;
+  }
 table tr :first-child{
-	width:120px;
-	font-size: 24px;
-	text-align: center;
-	background-color: rgb(22,112,136);
+	background-color: rgb(22, 112, 136);
+    margin: 10px 0px;
+    padding: 5px 25px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+	letter-spacing: 3px;
 }
 table tr :nth-child(2){
-	width:320px;
-	font-size: 24px;
-	text-align: center;
+	margin: 10px 0px;
+    padding: 5px 25px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+	letter-spacing: 3px;
 	background-color: rgb(89,89,87);
 }
 table{
 	margin-top: 60px;
+}
+.movie_title{
+	font-size: 28px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 
@@ -260,7 +278,7 @@ table{
 			<div class="side-bar active">
 				<div class="menu">
 					<div class="item">
-						<a class="sub-btn" style="font-size:20px; color: #13efdc;"><span>牙科專用軟體</span><i class="fas fa-angle-down dropdown"></i></a>
+						<a class="sub-btn" style="font-size:25px; color: #13efdc;"><span>牙科專用軟體</span><i class="fas fa-angle-down dropdown"></i></a>
 						<div class="sub-menu active">
 						<a href="https://printin3d.com.tw/layer-cutting/" class="sub-item">切層軟體</a>
 						<a href="https://printin3d.com.tw/corrective-software/" class="sub-item">矯正軟體</a>
@@ -275,7 +293,7 @@ table{
               <div id="introduce-part">
                 <div id="list_grid" class="container">
                   <div class="row">
-                    <div>
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-4">
 						<div class="grid_content">
 							<div class="thumb">
 							  <img
@@ -284,7 +302,7 @@ table{
 							</div>
 						</div>
 					  </div>
-                    <div id ="title" class="col-6 col-sm-7 col-lg-8">
+                    <div id ="title" class="col-8 col-sm-8 col-md-8 col-lg-8">
 						<div class="page_title">
 							<div class="thumb">
 								<h1 id="main_title" >PrintInX</h1>
@@ -306,7 +324,7 @@ table{
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-12 col-lg-12 mb-2 mt-4">
+					<div class="col-sm-12 col-lg-12 ">
 						<div class="grid_content">
 							<p class="color_title">功能影片</p>
 						</div>
@@ -316,7 +334,7 @@ table{
 							<p class="movie_title">矯正模型裁切</p>
 						</div>
 					</div>
-					<div class="col-sm-12 col-lg-8 mb-1 ">
+					<div class="col-sm-12 col-lg-8 ">
 						<div class="grid_content">
 							<div class="thumb">
 								<video src="https://printin3d.com.tw/wp-content/uploads/2022/09/矯正模型裁切.mp4" controls></video>
@@ -328,18 +346,18 @@ table{
 							<p class="movie_title">導板圓孔偵測</p>
 						</div>
 					</div>
-					<div class="col-sm-12 col-lg-8 mb-1 ">
+					<div class="col-sm-12 col-lg-8  ">
 						<div class="grid_content">
 							<div class="thumb">
 								<video src="https://printin3d.com.tw/wp-content/uploads/2022/09/導板圓孔偵測.mp4" controls></video>
+							</div>
 						</div>
+				</div>
+				<div class="col-sm-12 col-lg-12">
+					<div class="grid_content">
+						<p class="movie_title">自動建立支撐</p>
 					</div>
-					<div class="col-sm-12 col-lg-8">
-						<div class="grid_content">
-							<p class="movie_title">自動建立支撐</p>
-						</div>
-					</div>
-					</div>
+				</div>
 
 					<div class="col-sm-12 col-lg-8 mb-1 ">
 						<div class="grid_content">
@@ -371,7 +389,7 @@ table{
 						  src="https://printin3d.com.tw/wp-content/uploads/2022/09/特點1-2.png"
 						/>
 					</div>
-					<div class="col-sm-12 col-lg-12 mt-4">
+					<div class="col-sm-12 col-lg-12 mt-2">
 						<div class="grid_content">
 							<table>
 								<tbody>
@@ -383,7 +401,7 @@ table{
 							</table>
 						</div>
 					</div>
-					<div style="margin-top: 10px;" class="thumb col-lg-6">
+					<div style="margin-top: 60px;" class="thumb col-lg-6">
 						<img
 						  src="https://printin3d.com.tw/wp-content/uploads/2022/09/特點2-1.png"
 						/>
@@ -547,7 +565,7 @@ table{
 						</div>
 						<p id="over_title" class="movie_title">可在軟體內搜尋區域網路內的列印機，並上傳檔案與啟動列印</p>
 					</div>
-					<div class="thumb col-lg-6">
+					<div class="thumb col-lg-6" style="margin-bottom:60px">
 						<img
 						  src="https://printin3d.com.tw/wp-content/uploads/2022/09/特點-11.png"
 						/>

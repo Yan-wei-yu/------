@@ -30,6 +30,11 @@
       min-width: 100%;
       max-width: 100%;
     }
+    @media only screen and (min-width: 1210px) {
+    .col-md-3 {
+      padding-left: 45px;
+    }
+  }
     @media only screen and (max-width: 768px) {
       #main_title {
         font-size: 2em;
@@ -209,9 +214,11 @@
     }
     .color_title {
     background-color: rgb(22, 112, 136);
-    padding: 0px 20px;
-    font-size: 30px;
+    margin: 10px 0px;
+    padding: 5px 25px;
+    font-size: 34px;
     text-align: center;
+    font-weight: 600;
   }
   .grid_content {
     display: flex;
@@ -252,13 +259,13 @@
       display: none;
     }
     .product_particularity {
-      font-size: 25px;
+      font-size: 30px;
       display: inline-block;
       text-align: left;
       padding-left: 20px;
     }
     .product_particularity li{
-      margin-top: 20px;
+      margin: 40px 0px;
     }
   </style>
   <body>
@@ -271,8 +278,8 @@
                 <a href="https://printin3d.com.tw/">首頁</a>
               </li>
               <li class="breadcrumb-item"><a>數位牙科設備</a></li>
-              <li class="breadcrumb-item"><a href="https://printin3d.com.tw/scan-device/">掃描設備</a></li>
-              <li class="breadcrumb-item active">臉掃機</li>
+              <li class="breadcrumb-item"><a href="https://printin3d.com.tw/scan-device/">其他</a></li>
+              <li class="breadcrumb-item active">醫療頭燈</li>
             </ul>
           </div>
           <div id="side_title">
@@ -282,7 +289,7 @@
           <div class="side-bar active">
             <div class="menu">
               <div class="item">
-                <a class="sub-btn" style="font-size: 20px; color: #13efdc"
+                <a class="sub-btn" style="font-size: 25px; color: #13efdc"
                   ><span>數位牙科設備</span
                   ><i class="fas fa-angle-down dropdown"></i
                 ></a>
@@ -324,24 +331,24 @@
               <div class="row">
                 <div class="col-12 col-sm-12 col-lg-12">
                   <div class="grid_content">
-                    <p style="font-size: 30px;">無線醫療LED</p>
+                    <p style="font-size: 40px; font-weight: 600;margin-bottom: 30px;">無線醫療LED</p>
                   </div>
                 </div>
                 <div class="col-sm-12 col-lg-12">
                   <div class="grid_content">
-                    <p class="color_title">窄視角攝影頭燈</p>
+                    <p class="color_title" style="letter-spacing: 3px;">窄視角攝影頭燈</p>
                   </div>
                 </div>
-                <div class="col-sm-8 col-lg-4 mt-3">
+                <div class="col-sm-8 col-lg-5">
                   <div class="grid_content">
-                    <div class="thumb">
+                    <div class="thumb" style="margin-top:20px;">
                       <img src="https://printin3d.com.tw/wp-content/uploads/2022/09/FM105.png" />
                     </div>
                   </div>
                 </div>
                 <div class="col-sm-12 col-lg-12">
                   <div class="grid_content">
-                    <p class="color_title" style="margin-top: 70px;">頭燈強度</p>
+                    <p class="color_title" style="margin-top: 50px;margin-bottom: 20px;letter-spacing: 3px;">頭燈強度</p>
                   </div>
                 </div>
                 <div class="col-sm-12 col-lg-12">
@@ -355,33 +362,35 @@
                 </div>
                 <div class="col-sm-12 col-lg-12">
                   <div class="grid_content">
-                    <p style="margin-top: 40px; font-size: 30px;">錄音錄影</p>
+                    <p style="margin-top: 0px; font-size: 34px;font-weight: 600;">錄音錄影</p>
                   </div>
                   <p style="margin-top: 0px; font-size: 25px;">APP即時影像觀看</p>
                   <div class="grid_content">
-                    <p style="margin-top: 40px; font-size: 30px;">工作時間</p>
+                    <p style="margin-top: 40px; font-size: 34px;font-weight: 600;">工作時間</p>
                   </div>
                   <p style="margin-top: 0px; font-size: 25px;">5~15小時</p>
                 </div>
                 <div class="col-sm-12 col-lg-12">
                   <div class="grid_content">
-                    <p class="color_title" style="margin-top: 40px;">特色</p>
+                    <p class="color_title" style="margin-top: 40px;letter-spacing: 3px;">特色</p>
                   </div>
                 </div>
-                <div class="col-sm-12 col-lg-12">
-                  <div class="col-sm-12 col-lg-12">
-                        <ul class="product_particularity">
+                  <div class="col-sm-6 col-lg-6">
+                        <ul class="product_particularity"style="padding-left: 35px;">
                           <li>即時自動對焦鏡頭</li>
                           <li>無線802.11bg/結影機</li>
                           <li>視角放大倍數</li>
                           <li>高清解析度(FullHD)</li>
+                        </ul>
+                      </div>
+                  <div class="col-sm-6 col-lg-6">
+                        <ul class="product_particularity"style="padding-left: 35px;">
                           <li>可同時錄影錄音</li>
                           <li>內部記憶體(128/256GB)</li>
                           <li>操作錄影/拍照</li>
                           <li>即時傳輸影像觀看</li>
                         </ul>
                   </div>
-                </div>
               </div>
             </div>
           </div>

@@ -30,19 +30,26 @@
       min-width: 100%;
       max-width: 100%;
     }
+    @media only screen and (min-width: 1210px) {
+    .col-md-3 {
+      padding-left: 45px;
+    }
+  }
     @media only screen and (max-width: 768px) {
-      #main_title {
-        font-size: 2em;
-      }
+      #main_title{
+			font-size: 42px;
+			font-weight: 600;
+		}
+		#second_title{
+			font-size: 30px;
+			font-weight: 500;
+		}
       .col-md-3 {
         display: none;
       }
       .col-md-9 {
         flex: 0 0 100%;
         max-width: 100%;
-      }
-      #second_title {
-        font-size: 1.5em;
       }
       .third_title {
         font-size: 26px;
@@ -64,17 +71,21 @@
       }
     }
     @media only screen and (min-width: 769px) {
-      .third_title {
-        font-size: 30px;
-        line-height: 70px;
-      }
+      #main_title{
+			font-size: 48px;
+			font-weight: 600;
+		}
+		#second_title{
+			font-size: 36px;
+			font-weight: 500;
+		}
       #introduce_content {
         font-size: 32px;
         line-height: 60px;
       }
       .list-style {
-        font-size: 30px;
-        line-height: 60px;
+        font-size: 32px;
+        line-height: 90px;
       }
       .list-style li {
         padding-left: 15px;
@@ -183,17 +194,18 @@
     }
     #title {
       display: flex;
-      align-items: flex-end;
+      align-items: center;
     }
     #main_title,
     #second_title {
       font-family: Arial, Helvetica, sans-serif;
-      font-weight: 100;
+      font-weight: 600;
+      text-align: center;
     }
     .third_title {
       text-align: left;
       margin: 30px 0px 0px 0px;
-      font-weight: 400;
+      font-weight: 500;
       letter-spacing: 3px;
     }
     .thumb {
@@ -214,33 +226,41 @@
       display: flex;
     }
     .color_title {
-      background-color: rgb(22, 112, 136);
-      font-size: 35px;
-      text-align: center;
-      width: 150px;
-      margin: 75px 0px 0px 0px;
-    }
+    background-color: rgb(22, 112, 136);
+    margin: 50px 0px;
+    padding: 5px 25px;
+    font-size: 34px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 3px;
+  }
     .movie_title {
       margin-top: 20px;
       font-size: 24px;
       font-weight: 500;
     }
     table tr :first-child {
-      width: 120px;
-      font-size: 24px;
-      text-align: center;
       background-color: rgb(22, 112, 136);
+    margin: 10px 0px;
+    padding: 5px 25px;
+    font-size: 28px;
+    text-align: center;
+    font-weight: 600;
+	letter-spacing: 3px;
     }
     table tr :nth-child(2) {
-      width: 320px;
-      font-size: 24px;
-      text-align: center;
-      background-color: rgb(89, 89, 87);
+      margin: 10px 0px;
+    padding: 5px 25px;
+    font-size: 28px;
+    text-align: center;
+    font-weight: 600;
+	letter-spacing: 3px;
+	background-color: rgb(89,89,87);
     }
-    table {
-      margin-top: 60px;
-      margin-bottom: 30px;
-    }
+    table{
+	margin: 60px 0px;
+}
+
   </style>
   <body>
     <div class="container full-width">
@@ -262,7 +282,7 @@
           <div class="side-bar active">
             <div class="menu">
               <div class="item">
-                <a class="sub-btn" style="font-size: 20px; color: #13efdc"
+                <a class="sub-btn" style="font-size: 25px; color: #13efdc"
                   ><span>牙科專用軟體</span
                   ><i class="fas fa-angle-down dropdown"></i
                 ></a>
@@ -292,30 +312,27 @@
             </div>
           </div>
         </div>
-        <div class="col-md-9">
+        <div class="col-md-9 ">
           <div id="introduce-part">
             <div id="list_grid" class="container">
               <div class="row">
-                <div>
-                  <div class="grid_content">
-                    <div class="thumb">
-                      <img
-                        style="margin:0px 20px 10px 0px;"
-                        src="https://printin3d.com.tw/wp-content/uploads/2022/09/PrintInDentDesign_icon-e1663138818949.png"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div id="title" class="col-6 col-sm-6 col-lg-9">
-                  <div class="page_title">
-                    <div class="thumb">
-                      <h1 id="main_title">PrintIn DentDesign</h1>
-                      <h3 id="second_title" style="margin-bottom: 30px">
-                        牙科數位假牙軟體
-                      </h3>
-                    </div>
-                  </div>
-                </div>
+                <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+        <div class="grid_content">
+          <div class="thumb"style="margin-bottom:30px;">
+            <img
+            src="https://printin3d.com.tw/wp-content/uploads/2022/09/PrintInDentDesign_icon-e1663138818949.png"
+            />
+          </div>
+        </div>
+        </div>
+                <div id ="title" class="col-8 col-sm-8 col-md-8 col-lg-8">
+        <div class="page_title">
+          <div class="thumb">
+            <h1 id="main_title" >PrintIn DentDesign</h1>
+            <h3 id="second_title" style="margin-bottom: 30px;">牙科數位假牙軟體</h3>
+          </div>
+        </div>
+      </div> 
                 <div class="col-sm-12 col-lg-9">
                   <div class="grid_content">
                     <ul
@@ -332,18 +349,18 @@
                 </div>
                 <div class="col-sm-12 col-lg-8 mt-5">
                   <div class="grid_content">
-                    <div class="thumb">
+                    <div class="thumb"style="margin-bottom:15px;">
                       <img src="https://printin3d.com.tw/wp-content/uploads/2022/09/假牙軟體.png" />
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-12 col-lg-8">
+                <div class="col-sm-12 col-lg-12">
                   <div class="grid_content">
                     <p class="color_title">介紹</p>
                   </div>
                   <p
                     id="introduce_content"
-                    style="margin: 15px 0px 0px 0px; font-weight: 400"
+                    style="margin: 0px 0px 0px 0px; font-weight: 400"
                   >
                     PrintInDentDesign是專門開發給診所使用的
                     冠橋設計軟體，比傳統假牙製作上更迅速且
@@ -406,7 +423,7 @@
                       </tbody>
                     </table>
                   </div>
-                  <div class="thumb">
+                  <div class="thumb"style="margin-bottom:60px;">
                     <img src="https://printin3d.com.tw/wp-content/uploads/2022/09/特點4.png" />
                   </div>
                 </div>

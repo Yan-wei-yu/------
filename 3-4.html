@@ -30,9 +30,19 @@
       min-width: 100%;
       max-width: 100%;
     }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (min-width: 1210px) {
+    .col-md-3 {
+      padding-left: 45px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
       #main_title {
-        font-size: 2em;
+        font-size: 42px;
+        font-weight: 600;
+      }
+      #second_title {
+        font-size: 30px;
+        font-weight: 500;
       }
       .col-md-3 {
         display: none;
@@ -40,9 +50,6 @@
       .col-md-9 {
         flex: 0 0 100%;
         max-width: 100%;
-      }
-      #second_title {
-        font-size: 1.5em;
       }
       .third_title {
         font-size: 26px;
@@ -64,6 +71,14 @@
       }
     }
     @media only screen and (min-width: 769px) {
+      #main_title {
+        font-size: 48px;
+        font-weight: 600;
+      }
+      #second_title {
+        font-size: 36px;
+        font-weight: 500;
+      }
       .third_title {
         font-size: 30px;
         line-height: 70px;
@@ -73,8 +88,8 @@
         line-height: 60px;
       }
       .list-style {
-        font-size: 30px;
-        line-height: 60px;
+        font-size: 32px;
+        line-height: 90px;
       }
       .list-style li {
         padding-left: 5px;
@@ -182,16 +197,17 @@
     }
     #title {
       display: flex;
-      align-items: flex-end;
+      align-items: center;
     }
     #main_title,
     #second_title {
       font-family: Arial, Helvetica, sans-serif;
-      font-weight: 100;
+      font-weight: 600;
+      text-align: center;
     }
     .third_title {
       text-align: left;
-      margin: 30px 0px 0px 0px;
+      margin: 10px 0px 0px 0px;
       font-weight: 400;
       letter-spacing: 3px;
     }
@@ -220,14 +236,16 @@
     }
     .color_title {
       background-color: rgb(22, 112, 136);
-      font-size: 35px;
+      margin: 50px 0px;
+      padding: 5px 25px;
+      font-size: 34px;
       text-align: center;
-      width: 150px;
-      margin: 75px 0px 0px 0px;
+      font-weight: 600;
+      letter-spacing: 3px;
     }
     .introduce_movie {
       font-size: 30px;
-      font-weight: 500;
+      font-weight: 600;
       margin: 40px 0 0 0;
     }
   </style>
@@ -251,7 +269,7 @@
           <div class="side-bar active">
             <div class="menu">
               <div class="item">
-                <a class="sub-btn" style="font-size: 20px; color: #13efdc"
+                <a class="sub-btn" style="font-size: 25px; color: #13efdc"
                   ><span>牙科專用軟體</span
                   ><i class="fas fa-angle-down dropdown"></i
                 ></a>
@@ -285,14 +303,16 @@
           <div id="introduce-part">
             <div id="list_grid" class="container">
               <div class="row">
-                <div>
+                <div class="col-4 col-sm-4 col-md-4 col-lg-4">
                   <div class="grid_content">
-                    <div class="thumb">
-                      <img style="margin-right: 20px;" src="https://printin3d.com.tw/wp-content/uploads/2022/09/PrintInAligner_icon-e1663136673926.png"/>
+                    <div class="thumb" style="margin-bottom: 30px">
+                      <img
+                        src="https://printin3d.com.tw/wp-content/uploads/2022/09/PrintInAligner_icon-e1663136673926.png"
+                      />
                     </div>
                   </div>
                 </div>
-                <div id="title" class="col-6 col-sm-7 col-lg-8">
+                <div id="title" class="col-8 col-sm-8 col-md-8 col-lg-8">
                   <div class="page_title">
                     <div class="thumb">
                       <h1 id="main_title">PrintIn Aligner</h1>
@@ -302,7 +322,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-12 col-lg-8">
+                <div class="col-sm-12 col-lg-12">
                   <div class="grid_content">
                     <p class="third_title">
                       智慧型排牙讓矯正每一步的移動更精準，明確的模擬效果，讓患者更容易溝通了解。
@@ -311,7 +331,7 @@
                 </div>
                 <div class="col-sm-12 col-lg-8 mt-5">
                   <div class="grid_content">
-                    <div class="thumb">
+                    <div class="thumb"style="margin-bottom: 20px">
                       <img src="https://printin3d.com.tw/wp-content/uploads/2022/09/矯正.png" />
                     </div>
                   </div>
@@ -322,7 +342,7 @@
                   </div>
                   <p
                     id="introduce_content"
-                    style="margin: 15px 0px 0px 0px; font-weight: 400"
+                    style="margin: 0px 0px 0px 0px; font-weight: 400"
                   >
                     透過 PrintInAligner
                     軟體規劃，並配合醫師的想法去制定治療計畫能事先預知治療結果與規劃治療程序，提高齒顎矯正治療的正確性與精準度。
@@ -347,10 +367,10 @@
                   <div class="grid_content">
                     <p class="color_title">功能影片</p>
                   </div>
-                  <p id="movie_title" style="margin: 30px 0px">
+                  <p id="movie_title" style="margin-bottom: 50px;">
                     <b>細部規劃分出牙套步驟</b>
                   </p>
-                  <p style="font-size: 30px; font-weight: 500; margin: 0">
+                  <p style="font-size: 30px; font-weight: 500; margin: 30px 0px;">
                     1.Stage階段
                   </p>
                   <ul
@@ -358,6 +378,8 @@
                       list-style-type: '\2B25';
                       padding-left: 20px;
                       font-size: 22px;
+                      line-height: 80px;
+                      margin-bottom:30px;
                     "
                   >
                     <li>分出每個階段的移動大項可讓療程進程更清楚。</li>
@@ -372,8 +394,8 @@
                     </div>
                   </div>
                 <div class="col-sm-12 col-lg-12">
-                  <p class="introduce_movie">2.智慧型排牙</p>
-                  <p style="font-size: 20px; font-weight: 500; margin-bottom: 10px">
+                  <p class="introduce_movie"style="margin-bottom: 40px;">2.智慧型排牙</p>
+                  <p style="font-size: 22px; font-weight: 500; margin-bottom: 50px">
                     依照使用者的想法，在每個步驟中選擇要移動的牙齒進行移動。
                   </p>
                 </div>
@@ -385,12 +407,13 @@
                     </div>
                   </div>
                 <div class="col-sm-12 col-lg-12">
-                  <p class="introduce_movie">排牙功能</p>
+                  <p class="introduce_movie"style="margin-bottom: 30px;">排牙功能</p>
                   <ul
                     style="
                       list-style-type: '\2B25';
                       padding-left: 20px;
                       font-size: 22px;
+                      line-height: 80px;
                       margin-bottom: 40px;
                     "
                   >
@@ -413,8 +436,8 @@
                     </div>
                   </div>
                 <div class="col-sm-12 col-lg-12">
-                  <p class="introduce_movie">DSD排牙</p>
-                  <p style="font-size: 22px; margin-bottom: 20px">
+                  <p class="introduce_movie"style="margin-bottom: 40px;">DSD排牙</p>
+                  <p style="font-size: 22px; margin-bottom: 50px">
                     搭配面掃資訊取得更好的參考資訊。
                   </p>
                 </div>
@@ -426,14 +449,14 @@
                     </div>
                   </div>
                 <div class="col-sm-12 col-lg-12">
-                  <p class="introduce_movie">療程Step影片</p>
-                  <p style="font-size: 22px; margin-bottom: 20px">
+                  <p class="introduce_movie"style="margin-bottom: 40px;">療程Step影片</p>
+                  <p style="font-size: 22px; margin-bottom: 50px">
                     當軟體播放步驟移動動畫時，軟體會以播放時的步驟畫面，自動加載生成影片。
                   </p>
                 </div>
                   <div class="col-sm-12 col-lg-8 mb-1 ">
                     <div class="grid_content">
-                      <div class="thumb">
+                      <div class="thumb"style="margin-bottom: 60px;">
                         <video src="https://printin3d.com.tw/wp-content/uploads/2022/09/療程Step影片.mp4" controls></video>
                       </div>
                     </div>

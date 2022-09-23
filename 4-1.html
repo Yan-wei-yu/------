@@ -30,6 +30,11 @@
       min-width: 100%;
       max-width: 100%;
     }
+    @media only screen and (min-width: 1210px) {
+    .col-md-3 {
+      padding-left: 45px;
+    }
+  }
     @media only screen and (max-width: 768px) {
       #main_title {
         font-size: 2em;
@@ -200,8 +205,8 @@
     #title {
       margin: 30px 0px;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      align-items: left;
+      justify-content: left;
     }
     #main_title {
       font-family: Arial, Helvetica, sans-serif;
@@ -218,30 +223,31 @@
       object-fit: cover;
       border-radius: 60px;
       position: relative;
-      width: 90px;
-      height: 90px;
+      width: 140px;
+      height: 140px;
       display: block;
-      margin-left: auto;
-      margin-right: auto;
+      margin-left: 30px;
 	  
     }
     .name {
-      margin-left: auto;
-      margin-right: auto;
+      width: 220px;
+      padding: 0px 10px;
       margin-top: 25px;
-      width: 200px;
       background-color: rgb(21, 112, 136);
       font-size: 30px;
       text-align: center;
+      
     }
     .content_center {
-      text-align: center;
+      text-align: left;
     }
     .product_particularity {
       margin-top: 20px;
       font-size: 22px;
       display: inline-block;
       text-align: left;
+      margin-left: 25px;
+      margin-bottom: 60px;
     }
   </style>
   <body>
@@ -264,7 +270,7 @@
           <div class="side-bar active">
             <div class="menu">
               <div class="item">
-                <a href="https://printin3d.com.tw/consumables/" class="sub-item" style="color: #13efdc;padding-left: 30px;"
+                <a href="https://printin3d.com.tw/consumables/" class="sub-item" style="color: #13efdc;padding-left: 30px;font-size: 25px;"
                 >耗材</a><button class="btn"><i class="fa fa-angle-down" style="width: 10px;"><a style="height: 5px; "></a></i
               ></a></button>
                 <div class="sub-menu active">
@@ -319,7 +325,7 @@
 					  <p class="name">導板樹脂</p>
 					</div>
 					<div class="content_center">
-					  <ul class="product_particularity"style="margin-right: 20px;">
+					  <ul class="product_particularity">
 						<li>高精密度</li>
 						<li>可高壓消毒</li>
 						<li>高生物相容性</li>
@@ -332,7 +338,7 @@
 					  <p class="name">假牙樹脂</p>
 					</div>
 					<div class="content_center">
-					  <ul class="product_particularity" style="margin-left: 45px;">
+					  <ul class="product_particularity" >
 						<li>高強度與高耐磨</li>
 						<li>易修整、染色與拋光</li>
 						<li>高生物相容性</li>
@@ -345,7 +351,7 @@
 					  <p class="name">蠟型樹脂</p>
 					</div>
 					<div class="content_center">
-					  <ul class="product_particularity" style="margin-left: 22px;">
+					  <ul class="product_particularity" >
 						<li>高強度</li>
 						<li>高精密度</li>
 						<li>用於快速包埋鑄造</li>
@@ -358,7 +364,7 @@
 					  <p class="name">咬合板樹脂</p>
 					</div>
 					<div class="content_center">
-					  <ul class="product_particularity" style="margin-left: 65px;">
+					  <ul class="product_particularity" >
 						<li>高彈性</li>
 						<li>可選用於客製化咬合板</li>
 						<li>高生物相容性</li>
@@ -371,7 +377,7 @@
               <p class="name">牙托樹脂</p>
             </div>
             <div class="content_center">
-              <ul class="product_particularity" style="margin-right: 20px;">
+              <ul class="product_particularity" >
               <li>高硬度</li>
               <li>低收縮率</li>
               <li>高生物相容性</li>
@@ -384,7 +390,7 @@
               <p class="name">彈性牙床樹脂</p>
             </div>
             <div class="content_center">
-              <ul class="product_particularity"style="margin-left: 40px;">
+              <ul class="product_particularity">
               <li>高韌性</li>
               <li>易修整、染色與拋光</li>
               <li>高生物相容性</li>
@@ -396,7 +402,7 @@
               <p class="name">活動牙床樹脂</p>
             </div>
             <div class="content_center">
-              <ul class="product_particularity" style="margin-left: 45px;">
+              <ul class="product_particularity" >
               <li>高強度與高耐磨</li>
               <li>易修整、染色與拋光</li>
               <li>高生物相容性</li>
@@ -409,7 +415,7 @@
               <p class="name">隱形牙套樹脂</p>
             </div>
             <div class="content_center">
-              <ul class="product_particularity"style="margin-left: 60px;">
+              <ul class="product_particularity">
               <li>具有形狀尺寸記憶功能</li>
               <li>高韌性</li>
               <li>高生物相容性</li>

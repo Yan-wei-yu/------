@@ -44,10 +44,7 @@
       #second_title {
         font-size: 1.5em;
       }
-      .third_title {
-        font-size: 26px;
-        line-height: 60px;
-      }
+
       .list-style {
         font-size: 26px;
         line-height: 60px;
@@ -60,10 +57,6 @@
       }
     }
     @media only screen and (min-width: 769px) {
-      .third_title {
-        font-size: 30px;
-        line-height: 70px;
-      }
       .list-style {
         font-size: 30px;
         line-height: 60px;
@@ -174,27 +167,44 @@
       display: block;
       z-index: 1;
     }
-    .color_title {
-    margin-top: 20px;
+    .btn {
+  background: none;
+  position: absolute;
+  margin: -34px 0px 0px 160px;
+  border: black; 
+  color: #13efdc;
+  padding: 0px; 
+  font-size: 20px; 
+  cursor: pointer;
+  margin-bottom: 10px;
+  width: 10px;
+}
+.btn:hover {
+  color: #13efdc;
+}
+.color_title {
     background-color: rgb(22, 112, 136);
-    padding: 0px 20px;
-    font-size: 30px;
+    margin: 10px 0px;
+    padding: 5px 25px;
+    font-size: 34px;
     text-align: center;
+    font-weight: 600;
   }
   .product_particularity ,.data_particularity{
-      font-size: 25px;
+      font-size: 28px;
       display: inline-block;
       text-align: left;
       padding-left: 30px;
 
     }
     .product_particularity li{
-      margin-top: 20px;
-      padding-left: 10px;
+      margin-top: 40px;
+      padding-left: 0px;
       list-style-type: "\25CE";
+      padding-left: 10px;
     }
     .data_particularity li{
-      margin-top: 20px;
+      margin-top: 40px;
       list-style-type: decimal;
     }
     .grid_content {
@@ -229,11 +239,9 @@
     }
 
 
-    .sub-menu2
- {
+    .sub-menu1 ,.sub-menu2,.sub-menu3{
       padding-left: 40px;
     }
-
   </style>
   <body>
     <div class="container full-width">
@@ -244,8 +252,9 @@
               <li class="breadcrumb-item">
                 <a href="https://printin3d.com.tw/">首頁</a>
               </li>
-              <li class="breadcrumb-item"><a>代工服務</a></li>
-              <li class="breadcrumb-item active">植牙手術導引板</li>
+              <li class="breadcrumb-item"><a>數位牙科平台</a></li>
+              <li class="breadcrumb-item"><a>數位設計</a></li>
+              <li class="breadcrumb-item active">數位矯正代工</li>
             </ul>
           </div>
           <div id="side_title">
@@ -254,16 +263,17 @@
           <div class="side-bar active">
             <div class="menu">
               <div class="item">
-                <a class="sub-btn" style="font-size: 20px; color: #13efdc"
-                  ><span>數位牙科設備</span
+                <a class="sub-btn" style="font-size: 25px; color: #13efdc"
+                  ><span>數位牙科平台</span
                   ><i class="fas fa-angle-down dropdown"></i
                 ></a>
                 <div class="sub-menu active">
-                  <a class="sub-btn1" style="font-size: 20px; color: #13efdc"
-                    ><span>代工服務</span><i class="fas fa-angle-down dropdown" ></i></a>
-                  <div class="sub-menu2 active">
-                    <a href="#" class="sub-item" style="color: #13efdc">植牙手術導引板</a>
-                    <a href="#" class="sub-item">數位矯正牙套</a>
+                  <a href="https://printin3d.com.tw/digital-design/" class="sub-item" style="color: #13efdc;"
+                    >數位設計</a><button class="btn"><i class="fa fa-angle-down" style="width: 10px;"><a style="height: 5px; "></a></i
+                  ></a></button>
+                  <div class="sub-menu1 active">
+                    <a href="https://printin3d.com.tw/digital-corrective-oem/" class="sub-item"style="color: #13efdc;">數位矯正代工</a>
+                    <a href="https://printin3d.com.tw/dental-implant-surgery-oem/" class="sub-item">植牙手術代工</a>
                   </div>
                 </div>
               </div>
@@ -276,8 +286,8 @@
               <div class="row">
                 <div class="col-sm-12 col-lg-12">
                   <div class="grid_content">
-                    <p class="third_title">
-                      一、植牙手術導引板
+                  <p style="font-size: 40px; font-weight: 600;margin: 40px 0px;">
+                      植牙手術導引板
                     </p>
                   </div>
                 </div>
@@ -291,7 +301,7 @@
                 <div class="col-sm-12 col-lg-8">
                   <div class="grid_content">
                     <p class="color_title">
-                      提供：</p>
+                      提供</p>
                   </div>
                 </div>
                     <div class="col-sm-12 col-lg-12">
@@ -301,7 +311,7 @@
                             <li>手術器械租賃</li>
                           </ul>
                     </div>
-                    <div class="col-sm-12 col-lg-6 mt-5">
+                    <div class="col-sm-12 col-lg-6"style="margin-top: 40px;">
                       <div class="grid_content">
                         <div class="thumb">
                           <img src="https://printin3d.com.tw/wp-content/uploads/2022/09/器械.png" />
@@ -316,7 +326,7 @@
                     </div>
                       <div class="col-sm-12 col-lg-12">
                             <ul class="data_particularity">
-                              <li>患者STL資料<p  style="margin-bottom: 0px;">(1.)口掃檔案<br>(2.)石膏模型(注意取模時不要有氣泡及拉扯)</p></li>
+                              <li>患者STL資料<p style="margin: 40px 0px;">(1.)口掃檔案</p><p>(2.)石膏模型(注意取模時不要有氣泡及拉扯)</p></li>
                               <li>患者CBCT</li>
                               <li>植牙齒位</li>
                               <li>植體廠牌及型號</li>
@@ -341,8 +351,8 @@
 
       $(document).ready(function () {
         //jquery for toggle sub menus
-        $(".sub-btn1").click(function () {
-          $(this).next(".sub-menu2").slideToggle();
+        $(".btn").click(function () {
+          $(this).next(".sub-menu1").slideToggle();
           $(this).find(".fa-angle-down").toggleClass("rotate");
         });
       });

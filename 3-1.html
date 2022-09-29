@@ -185,7 +185,7 @@
 #main_title,#second_title{
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 600;
-	text-align: center;
+	text-align: left;
 }
 .thumb {
     position: relative;
@@ -251,13 +251,18 @@ table tr :nth-child(2){
 	background-color: rgb(89,89,87);
 }
 table{
-	margin-top: 100px;
+	margin-top: 85px;
 }
 .movie_title{
 	font-size: 28px;
-	margin:30px 0px;
+	margin-top: 60px;
+	margin-bottom: 30px;
 }
-
+.list_title{
+	font-size: 28px;
+	margin-top: 35px;
+	margin-bottom: 25px;
+}
 
   </style>
   <body>
@@ -292,7 +297,7 @@ table{
               <div id="introduce-part">
                 <div id="list_grid" class="container">
                   <div class="row">
-                    <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-3">
 						<div class="grid_content">
 							<div class="thumb">
 							  <img
@@ -330,7 +335,7 @@ table{
 					</div>
 					<div class="col-sm-12 col-lg-12">
 						<div class="grid_content">
-							<p class="movie_title"style="margin-bottom: 40px;">矯正模型裁切</p>
+							<p style="font-size:28px;margin: 25px 0px;">矯正模型裁切</p>
 						</div>
 					</div>
 					<div class="col-sm-12 col-lg-8 ">
@@ -354,23 +359,23 @@ table{
 				</div>
 				<div class="col-sm-12 col-lg-12">
 					<div class="grid_content">
-						<p class="movie_title"style="margin-bottom: 40px;">自動建立支撐</p>
+						<p class="movie_title">自動建立支撐</p>
 					</div>
 				</div>
 
-					<div class="col-sm-12 col-lg-8 mb-1 ">
+					<div class="col-sm-12 col-lg-8  ">
 						<div class="grid_content">
 							<div class="thumb">
 								<video src="https://printin3d.com.tw/wp-content/uploads/2022/09/自動建立支撐.mp4" controls></video>
 							</div>
 					</div>
 					</div>
-					<div class="col-sm-12 col-lg-12 mt-5">
+					<div class="col-sm-12 col-lg-12"style="margin-top: 60px;">
 						<div class="grid_content">
 							<p class="color_title">特點</p>
 						</div>
 						<div class="grid_content">
-							<table>
+							<table style="margin-top: 50px;">
 								<tbody>
 									<tr>
 										<td>特點1.</td>
@@ -381,7 +386,7 @@ table{
 						</div>
 					</div>
 					<div class="col-sm-12 col-lg-12">
-						<p id="over_title" class="movie_title">自動計算列印角度/自動建支撐/自動擺盤/自動辨識特徵</p>
+						<p id="over_title" class="list_title">自動計算列印角度/自動建支撐/自動擺盤/自動辨識特徵</p>
 					</div>
 					<div class="thumb col-lg-8">
 						<img
@@ -416,7 +421,7 @@ table{
 								</tbody>
 							</table>
 						</div>
-						<p id="over_title" class="movie_title">矯正平行模可作3D薄殼處理；一般模型可用挖空功能進行，節省樹脂用量。</p>
+						<p id="over_title" class="list_title">矯正平行模可作3D薄殼處理；一般模型可用挖空功能進行，節省樹脂用量。</p>
 					</div>
 					<div class="thumb col-lg-6">
 						<img
@@ -434,7 +439,7 @@ table{
 								</tbody>
 							</table>
 						</div>
-						<p id="over_title" class="movie_title">裁切矯正模型，節省列印的材料與時間</p>
+						<p id="over_title" class="list_title">裁切矯正模型，節省列印的材料與時間</p>
 					</div>
 					<div class="thumb col-lg-6">
 						<img
@@ -452,7 +457,7 @@ table{
 								</tbody>
 							</table>
 						</div>
-						<p id="over_title" class="movie_title">建支撐後自動加入文字，幫助列印後辨識模型資訊</p>
+						<p id="over_title" class="list_title">建支撐後自動加入文字，幫助列印後辨識模型資訊</p>
 					</div>
 					<div class="thumb col-lg-4">
 						<img
@@ -470,7 +475,7 @@ table{
 								</tbody>
 							</table>
 						</div>
-						<p id="over_title" class="movie_title">自動建立口掃資料的底座並列印</p>
+						<p id="over_title" class="list_title">自動建立口掃資料的底座並列印</p>
 					</div>
 					<div class="thumb col-lg-5">
 						<img
@@ -488,7 +493,7 @@ table{
 								</tbody>
 							</table>
 						</div>
-						<p id="over_title" class="movie_title">
+						<p id="over_title" class="list_title">
 							可選擇字型與尺寸，在模型上進行凹字或凸字的標註</p>
 					</div>
 					<div class="thumb col-lg-5">
@@ -507,7 +512,7 @@ table{
 								</tbody>
 							</table>
 						</div>
-						<p id="over_title" class="movie_title">全口模型可加上補強柱，避免牙弓變形發生</p>
+						<p id="over_title" class="list_title">全口模型可加上補強柱，避免牙弓變形發生</p>
 					</div>
 					<div class="thumb col-lg-4">
 						<img
@@ -525,7 +530,7 @@ table{
 								</tbody>
 							</table>
 						</div>
-						<p id="over_title" class="movie_title">微調支撐區域，避免支撐產生在黏膜區域或其他需要後修的地方						</p>
+						<p id="over_title" class="list_title">微調支撐區域，避免支撐產生在黏膜區域或其他需要後修的地方						</p>
 					</div>
 					<div class="thumb col-lg-6">
 						<img
@@ -543,7 +548,7 @@ table{
 								</tbody>
 							</table>
 						</div>
-						<p id="over_title" class="movie_title">
+						<p id="over_title" class="list_title">
 							紀錄膜片每個區域的列印量，幫助管理列印擺盤，延長膜片使用壽命</p>
 					</div>
 					<div class="thumb col-lg-4">
@@ -562,7 +567,7 @@ table{
 								</tbody>
 							</table>
 						</div>
-						<p id="over_title" class="movie_title">可在軟體內搜尋區域網路內的列印機，並上傳檔案與啟動列印</p>
+						<p id="over_title" class="list_title">可在軟體內搜尋區域網路內的列印機，並上傳檔案與啟動列印</p>
 					</div>
 					<div class="thumb col-lg-6" style="margin-bottom:60px">
 						<img

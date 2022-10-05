@@ -281,9 +281,7 @@
                   ><i class="fas fa-angle-down dropdown"></i
                 ></a>
                 <div class="sub-menu active">
-                  <a href="https://printin3d.com.tw/scan-device/#produce" class="sub-item" style="color: #13efdc;"
-                    >掃描設備</a><button class="btn"><i class="fa fa-angle-down" style="width: 10px;"><a style="height: 5px; "></a></i
-                  ></a></button>
+                  <a class="btn3" style="font-size: 20px;color: #13efdc;"><span>掃描設備</span><i class="fas fa-angle-down dropdown" style="color: #13efdc;"></i></a>
                   <div class="sub-menu1 active">
                     <a href="https://printin3d.com.tw/digital-intraoral-scanner/#produce" class="sub-item">口掃機</a>
                     <a href="https://printin3d.com.tw/digital-desktop-scanner/#produce" class="sub-item"style="color: #13efdc;">桌掃機</a>
@@ -398,7 +396,7 @@
       });
       $(document).ready(function () {
         //jquery for toggle sub menus
-        $(".btn").click(function () {
+        $(".btn3").click(function () {
           $(this).next(".sub-menu1").slideToggle();
           $(this).find(".fa-angle-down").toggleClass("rotate");
         });

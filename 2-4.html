@@ -297,9 +297,7 @@
                   ><i class="fas fa-angle-down dropdown"></i
                 ></a>
                 <div class="sub-menu active">
-                  <a href="https://printin3d.com.tw/scan-device/#produce" class="sub-item"
-                    >掃描設備</a><button class="btn"><i class="fa fa-angle-right" style="width: 10px; margin-left: 0;"><a style="height: 5px; "></a></i
-                  ></a></button>
+                  <a class="sub-btn3">掃描設備<i class="fa fa-angle-right" style="margin-left: 10px;"></i></a>
                   <div class="sub-menu1 active">
                     <a href="https://printin3d.com.tw/digital-intraoral-scanner/#produce" class="sub-item">口掃機</a>
                     <a href="https://printin3d.com.tw/digital-desktop-scanner/#produce" class="sub-item">桌掃機</a>
@@ -308,13 +306,13 @@
                     <a class="sub-btn1" style="font-size: 20px;"
                     ><span>3D列印設備</span
                     ><i class="fas fa-angle-right"></i></a>
-				<div class="sub-menu2 active">
-					<a href="https://printin3d.com.tw/printinortho/#produce" class="sub-item" >printinOrtho+</a>
-					<a href="https://printin3d.com.tw/sonic-4k-2022/#produce" class="sub-item">sonic 4K 2022</a>
-					<a href="https://printin3d.com.tw/printindlp/#produce" class="sub-item">PrintInDLP+</a>
-					<a href="https://printin3d.com.tw/form3/#produce" class="sub-item">Form3</a>
-					<a href="https://printin3d.com.tw/curing-machine/#produce" class="sub-item">高強度固化機</a>
-				</div>
+                    <div class="sub-menu2 active">
+                      <a href="https://printin3d.com.tw/printindlp/#produce" class="sub-item">PrintInDLP+</a>
+                      <a href="https://printin3d.com.tw/printinortho/#produce" class="sub-item" >PrintInOrtho+</a>
+                      <a href="https://printin3d.com.tw/sonic-4k-2022/#produce" class="sub-item">Sonic 4K 2022</a>
+                      <a href="https://printin3d.com.tw/form3/#produce" class="sub-item">Form3</a>
+                      <a href="https://printin3d.com.tw/curing-machine/#produce" class="sub-item">高強度固化機</a>
+                    </div>
                   <a class="sub-btn2"
                   style="color: #13efdc;">其他<i class="fa fa-angle-down dropdown"></i
                   ></a>
@@ -394,12 +392,11 @@
         });
       });
       $(document).ready(function () {
-        //jquery for toggle sub menus
-        $(".btn").click(function () {
-          $(this).next(".sub-menu1").slideToggle();
-          $(this).find(".fa-angle-right").toggleClass("rotate1");
-        });
+      $(".sub-btn3").click(function () {
+        $(this).next(".sub-menu1").slideToggle();
+        $(this).find(".fa-angle-right").toggleClass("rotate1");
       });
+    });
       $(document).ready(function () {
         //jquery for toggle sub menus
         $(".sub-btn1").click(function () {

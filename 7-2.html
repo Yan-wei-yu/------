@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <style>
+	* {
+    margin: 0;
+    padding: 0;
+}
+	.full-width {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+@media only screen and (max-width: 768px) {
+	.list-style {
+        font-size: 26px;
+        line-height: 60px;
+      }
+      .list-style li {
+        padding-left: 5px;
+      }
+}
+@media only screen and (min-width: 1210px) {
+    .col-md-3 {
+      padding-left: 45px;
+    }
+  }
+  @media only screen and (min-width:769px) {
+	#main_title{
+			font-size: 48px;
+			font-weight: 600;
+		}
+		#second_title{
+			font-size: 36px;
+			font-weight: 500;
+		}
+		.list-style {
+        font-size: 28px;
+        line-height: 70px;
+      }
+      .list-style li {
+        padding-left: 5px;
+      }
+	  #movie_title {
+        font-size: 35px;
+      }
+  }
+	@media only screen and (max-width:768px) {
+		#main_title{
+			font-size: 42px;
+			font-weight: 600;
+		}
+		#second_title{
+			font-size: 30px;
+			font-weight: 500;
+		}
+		.col-md-3{
+		
+		display: none;
+	}
+	#movie_title {
+        font-size: 25px;
+      }
+	.col-md-9{
+		flex: 0 0 100%;
+		max-width: 100%;
+		
+	}
+		
+		.third_title{
+		font-size: 26px;
+	}
+	
+
+}
+@media only screen and (min-width:769px)and (max-width:850px) {
+	.third_title{
+		font-size: 24px;
+	}
+	
+}
+	@media only screen and (min-width:851px) {
+	
+		.third_title{
+		font-size: 32px;
+	}
+}
+
+
+	h2{
+		margin: 0px 40px 0px 0px;
+    	border-bottom: 2px solid #ffffff;
+		}
+	.col-md-3{
+		
+		background-color: rgb(7, 32, 39);
+	}
+	body{
+		color: #ffffff;
+	}
+	.col-md-9{
+		background-color: rgb(22, 41, 53);
+		
+	}
+
+	#bread_area .breadcrumb-item+.breadcrumb-item:before {
+    content: "-";
+    color: #ffffff;
+}
+	#bread_area .breadcrumb {
+		background: inherit;
+		padding: 0;
+	}
+	#bread_area {
+	
+    margin:40px 0px 30px 0px;
+	
+	
+}
+
+#bread_area a ,.breadcrumb-item.active{
+	color: #ffffff;
+	font-size: 20px;
+	text-decoration: none;
+	
+}
+
+.side-bar{
+ background: inherit;
+ width: 100%;
+ height: 100vh;
+ /*position: fixed;*/
+ overflow-y: auto;
+ transition: 0.6s ease;
+ margin: 0;
+}	
+
+.side-bar::-webkit-scrollbar {
+  width: 0px;
+}
+
+.side-bar .menu{
+ width: 100%;
+ margin-top: 10px;
+ 
+}
+.side-bar .menu .item{
+ position: relative;
+ cursor: pointer;
+}
+.side-bar .menu .item a{
+ color: inherit;
+ font-size: 20px;
+ text-decoration: none;
+ display: block;
+ padding: 0px 0px;
+ line-height: 40px;
+}
+
+.sub-btn{
+		margin-top: 22px;
+	}
+.side-bar .menu .item a .dropdown {
+	margin: 0px 0px 0px 10px;
+}
+
+.side-bar .menu .item .sub-menu{
+ background: inherit;
+ 
+}
+.side-bar .menu .item .sub-menu a{
+ padding-left: 70px;
+}
+.rotate{
+ transform: rotate(-90deg);
+ color: rgb(255, 255, 255);
+}
+.side-bar .menu .item a:first-child{
+	color: #13efdc;
+}
+.sub-menu.active{
+	position: relative;
+	padding: 0;
+}
+.sub-menu.active:before{
+  position:absolute;
+  content: " ";
+  margin-left: 55px;
+  border-left:3px solid #ffffff ;
+  height:100%;
+  display: block;
+  z-index: 1;
+  
+}
+#main_title,#second_title{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	text-align: left;
+}
+.thumb {
+    position: relative;
+    display: block;
+   
+}
+.thumb img {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+.thumb video{
+	position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+
+#introduce-part{
+	margin-top: 40px;
+	
+}
+#title{
+	display: flex; 
+	align-items:center; 
+}
+.third_title{
+	
+	text-align: left;
+	margin:30px 0px 0px 0px;
+	font-weight: 500;
+	
+}
+.grid_content{
+	display: flex;
+}
+.color_title {
+    background-color: rgb(22, 112, 136);
+    margin: 10px 0px;
+    padding: 5px 25px;
+    font-size: 34px;
+    text-align: center;
+    font-weight: 600;
+	letter-spacing: 3px;
+  }
+table tr :first-child{
+	background-color: rgb(22, 112, 136);
+    margin: 10px 0px;
+    padding: 5px 25px;
+    font-size: 28px;
+    text-align: center;
+    font-weight: 600;
+	letter-spacing: 3px;
+}
+table tr :nth-child(2){
+	margin: 10px 0px;
+    padding: 5px 25px;
+    font-size: 28px;
+    text-align: center;
+    font-weight: 600;
+	letter-spacing: 3px;
+	background-color: rgb(89,89,87);
+}
+table{
+	margin-top: 85px;
+}
+.movie_title{
+	font-size: 28px;
+	margin-top: 60px;
+	margin-bottom: 30px;
+}
+.list_title{
+	font-size: 28px;
+	margin-top: 35px;
+	margin-bottom: 25px;
+}
+
+  </style>
+  <body>
+<div id="produce" class="container full-width">
+    <div class="row">
+			<div class="col-md-3">
+				<div id="bread_area">
+					<ul class="breadcrumb breadcrumb_obj">
+					<li class="breadcrumb-item"><a href="https://printin3d.com.tw/">首頁</a></li>
+					<li class="breadcrumb-item"><a>牙科專用軟體</a></li>
+					<li class="breadcrumb-item active">切層軟體</li>
+					</ul>
+				</div>
+				<div id="side_title">
+					<h2 class="side_title_text">項目</h2>
+				</div>	
+			<div class="side-bar active">
+				<div class="menu">
+					<div class="item">
+						<a class="sub-btn" style="font-size:25px; color: #13efdc;"><span>牙科專用軟體</span><i class="fas fa-angle-down dropdown"></i></a>
+						<div class="sub-menu active">
+						<a href="https://printin3d.com.tw/layer-cutting/" class="sub-item">切層軟體</a>
+						<a href="https://printin3d.com.tw/corrective-software/" class="sub-item">矯正軟體</a>
+						<a href="https://printin3d.com.tw/implant-software/" class="sub-item">植牙軟體</a>
+						<a href="https://printin3d.com.tw/denture-software/" class="sub-item">假牙軟體</a>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+          <div class="col-md-9 ">
+              <div id="introduce-part">
+                <div id="list_grid" class="container">
+                  <div class="row">
+						<div class="grid_content">
+							<div class="thumb"style="margin-right: 20px;">
+							  <img
+								src="https://printin3d.com.tw/wp-content/uploads/2022/10/PrintIn-3DP.png"
+							  />
+							</div>
+							<div id ="title">
+								<div class="page_title">
+									<div class="thumb">
+										<h1 id="main_title" >PrintIn 3DP</h1>
+										<h3 id="second_title" style="margin-bottom: 30px;"></h3>
+									</div>
+								</div>
+							</div>
+						</div>
+                   
+					<div class="col-sm-12 col-lg-12">
+						<div class="grid_content">
+							<p class="third_title">Easy to use DLP/LCD 3D printing software</p>
+						</div>
+					</div>
+					<div class="col-sm-12 col-lg-8 mb-5 mt-5">
+						<div class="grid_content">
+							<div class="thumb">
+							  <img
+								src="https://printin3d.com.tw/wp-content/uploads/2022/10/PrintIn-3DP圖.png"
+							  />
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-lg-12">
+						<div class="grid_content">
+						  <p class="color_title">SLM Module</p>
+						</div>
+							<p id="over_title" class="list_title">
+								For SLM printing job, we divide models and supports into different regions and take different scan strategies to satisfy the request of different regions.</p>				
+					  </div>
+					  <div class="col-sm-12 col-lg-8 mb-5">
+						<div class="grid_content">
+							<div class="thumb">
+							  <img
+								src="https://printin3d.com.tw/wp-content/uploads/2022/10/SLM-Module圖.png"
+							  />
+							</div>
+						</div>
+					</div>
+					
+					</div>
+				</div>         
+    </div>
+</div>
+		  </div>
+	<script type="text/javascript">
+	 $(document).ready(function(){
+     //jquery for toggle sub menus
+     $('.sub-btn').click(function(){
+       $(this).next('.sub-menu').slideToggle();
+       $(this).find('.dropdown').toggleClass('rotate');
+	   $(this).find('span').toggleClass('rotate');
+     });
+	});
+		</script>
+  </body>
+</html>

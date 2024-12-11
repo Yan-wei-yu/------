@@ -20,6 +20,7 @@
       charset="utf-8"
     ></script>
   </head>
+  <body>
   <style>
     * {
       margin: 0;
@@ -232,14 +233,35 @@
       margin: auto;
     }
    
-.sub-menu1 ,.sub-menu2,.sub-menu3{
-      padding-left: 40px;
-    }
-    .sub-menu2,.sub-menu3{
+  .sub-menu1,
+  .sub-menu2,
+  .sub-menu3,
+  .sub-menu4 {
+    padding-left: 40px;
+  }
+    .sub-menu2,.sub-menu3,.sub-menu4{
       display: none;
     }
+
+    .btn {
+    background: none;
+    position: absolute;
+    margin: -34px 0px 0px 160px;
+    border: black;
+    color: white;
+    padding: 0px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 10px;
+  }
+
+  .btn:hover {
+    color: white;
+  }
+
   </style>
-  <body>
+
     <div id="produce" class="container full-width">
       <div class="row">
         <div class="col-md-3">
@@ -282,6 +304,9 @@
                   <a href="https://printin3d.com.tw/Form4/" class="sub-item">Form4</a>
                   <a href="https://printin3d.com.tw/curing-machine/" class="sub-item">高強度固化機</a>
                 </div>
+                <a href="https://printin3d.com.tw/dental-milling-machine/" class="sub-item">加工設備</a><button class="btn">
+                  <i class="fa fa-angle-right" style="width: 10px;"><a style="height: 5px; "></a></i
+                  ></a></button>
                   <div class="sub-menu4 active">
                     <a href="https://printin3d.com.tw/dental-implant-surgery-oem/" class="sub-item">桌上型五軸加工機PrintInMill</a>
                     <a href="https://printin3d.com.tw/digital-corrective-oem/" class="sub-item">燒結爐F20</a>
@@ -422,6 +447,14 @@
           $(this).find(".fa-angle-right").toggleClass("rotate1");
         });
       });
+      $(document).ready(function () {
+      //jquery for toggle sub menus
+      $(".btn").click(function () {
+        $(this).next(".sub-menu4").slideToggle();
+        $(this).find(".fa-angle-right").toggleClass("rotate1");
+      });
+    });
+      
     </script>
   </body>
 </html>
